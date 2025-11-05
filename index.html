@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>名状にゃるる｜公式サイト</title>
+  <meta name="description" content="名状にゃるる｜癒しと観察のあいだを旅するVTuber。日常の小さな気づきや癒しを、映像と声で届けます。" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      --bg:#0e0f12; --panel:#14161b; --text:#f3f5f7; --muted:#aeb4be; --accent:#7cc4ff;
+      --card:#1a1d23; --border:#23262e; --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: system-ui, -apple-system, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(14,15,18,.6);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border);z-index:2}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:40px;height:40px;border-radius:12px}
+    .nav a{padding:10px 14px;border-radius:10px}
+    .nav a:hover{background:var(--panel)}
+
+    .hero{display:grid;grid-template-columns: 1.1fr .9fr;gap:28px;align-items:center;padding:48px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+    .card.pad{padding:24px}
+    .kicker{letter-spacing:.18em;color:var(--muted);font-size:12px;text-transform:uppercase}
+    h1{font-size:38px;margin:6px 0 14px}
+    p.lead{color:var(--muted);font-size:16px;line-height:1.9;margin:0}
+    .cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:var(--panel);color:var(--text)}
+    .btn.primary{background:var(--accent);color:#07263a;border-color:transparent;font-weight:700}
+
+    .hero .visual{aspect-ratio:1/1.1;border-radius:18px;overflow:hidden;border:1px solid var(--border);background:#0b0c10 url('images/nyaruru_kv.jpg') center/cover no-repeat}
+    .grid{display:grid;grid-template-columns: repeat(3, 1fr);gap:18px}
+
+    section{padding:28px 0}
+    h2{font-size:26px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+
+    .about{display:grid;grid-template-columns: .9fr 1.1fr;gap:20px}
+    .about .illust{aspect-ratio: 4/3; border-radius:14px; background:#0b0c10 url('images/nyaruru_about.jpg') center/cover no-repeat; border:1px solid var(--border)}
+
+    .work{display:grid;grid-template-columns: repeat(3, 1fr); gap:14px}
+    .work .item{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+    .work .thumb{aspect-ratio:16/9;background:#0b0c10 center/cover no-repeat}
+    .work .cap{padding:12px}
+    .work .cap b{display:block;margin-bottom:4px}
+    .work .cap p{margin:0;color:var(--muted);font-size:14px}
+
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px}
+    .social{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:var(--card)}
+
+    footer{margin:36px 0 24px;color:var(--muted);font-size:13px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr;}
+      .about{grid-template-columns: 1fr}
+      .grid{grid-template-columns: 1fr 1fr}
+      .work{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="images/nyaruru_icon.jpg" alt="名状にゃるる アイコン" />
+        <strong>名状にゃるる</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#concept">Concept</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card pad">
+        <div class="kicker">Official</div>
+        <h1>癒しと観察のあいだを旅する VTuber<br/>名状にゃるる</h1>
+        <p class="lead">日常の小さな気づきや、美しさと違和感。<br/>それらを声と映像でそっと手渡します。<br/>チャンネルでは、ショートな気づきトーク、やさしい夜の雑談、ものづくり記録などを投稿していきます。</p>
+        <div class="cta">
+          <a class="btn primary" href="#" target="_blank">YouTube を見る</a>
+          <a class="btn" href="#" target="_blank">X（Twitter）</a>
+          <a class="btn" href="#" target="_blank">公式サイト更新ログ</a>
+        </div>
+      </div>
+      <div class="visual" aria-label="名状にゃるる メインビジュアル"></div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <div class="illust" aria-label="にゃるるについてのイラスト"></div>
+        <div class="card pad">
+          <p><b>名状にゃるる（めいじょう・にゃるる）</b> は、地球をやさしく観察するVTuber。落ち着いた声で、日常のなかの小さな発見や癒しを届けます。配信や動画では「知らない世界の解像度が上がる瞬間」を大切に、視点が少し広がる体験を作っていきます。</p>
+          <p class="muted">※このサイトは <b>キャラクター“名状にゃるる”の公式ページ</b>です。制作スタッフ等の個人情報は掲載しません。</p>
+          <div class="panel" style="margin-top:10px">
+            <div class="kicker">活動予定</div>
+            <ul>
+              <li>自己紹介動画の公開</li>
+              <li>ショート「夜のひとこと」シリーズ</li>
+              <li>やさしいゲーム観察・ものづくり記録</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <h2>Works</h2>
+      <p class="muted">作品の一部を紹介します。詳細は動画リンクやSNSをご確認ください。</p>
+      <div class="work">
+        <article class="item">
+          <a href="#" target="_blank" class="thumb" style="background-image:url('images/work_pr.jpg');" aria-label="自己PR動画"></a>
+          <div class="cap">
+            <b>自己PRムービー（2min）</b>
+            <p>にゃるるの活動の核と声のトーンを紹介する短編。</p>
+          </div>
+        </article>
+        <article class="item">
+          <a href="#" target="_blank" class="thumb" style="background-image:url('images/work_model.jpg');" aria-label="3Dモデル"></a>
+          <div class="cap">
+            <b>3Dボディ制作</b>
+            <p>表情・動き・空間演出を重視した“にゃるるのからだ”。</p>
+          </div>
+        </article>
+        <article class="item">
+          <a href="#" target="_blank" class="thumb" style="background-image:url('images/work_thumb.jpg');" aria-label="サムネ・配信画面"></a>
+          <div class="cap">
+            <b>配信画面・サムネ</b>
+            <p>静かな夜の雰囲気を大切にしたデザイン。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="concept">
+      <h2>Concept</h2>
+      <div class="card pad">
+        <p><b>合言葉は「好きが増える」。</b><br/>名状にゃるるは、知らなかった世界が少し身近になる“気づき”を集めて、穏やかな語りで分かち合います。癒しに偏りすぎず、好奇心に偏りすぎず——そのあいだの心地よい場所を探ります。</p>
+        <div class="grid" style="margin-top:10px">
+          <div class="panel">
+            <div class="kicker">Tone</div>
+            <p class="muted">落ち着き・誠実・やさしさ。深呼吸できる空気。</p>
+          </div>
+          <div class="panel">
+            <div class="kicker">Theme</div>
+            <p class="muted">観察・癒し・ものづくり。短い気づきから始まる発見。</p>
+          </div>
+          <div class="panel">
+            <div class="kicker">Content</div>
+            <p class="muted">自己紹介、ショート語り、やさしい実況、制作記録。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card pad">
+        <p>コラボ・お仕事のご相談は下記フォームからお願いします。返信は数日いただく場合があります。</p>
+        <div class="cta">
+          <a class="btn primary" href="#" target="_blank">お問い合わせフォーム</a>
+          <a class="btn" href="#" target="_blank">メール（info@example.com）</a>
+        </div>
+        <div class="social" style="margin-top:10px">
+          <span class="chip">#名状にゃるる</span>
+          <span class="chip">#好きが増える</span>
+          <span class="chip">#夜のひとこと</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        © <span id="y"></span> Nyaruru. All rights reserved.
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
